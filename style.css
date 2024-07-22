@@ -325,7 +325,16 @@ footer a:hover {
   color: rgb(71, 173, 187);
 }
 
-@media (min-width: 393px) and (max-width: 2000px) {
+.company {
+  background-image: url("./images/tree.jpeg");
+
+}
+
+.hero {
+  background-image: url("./images/main.jpeg");
+
+}
+@media (min-width: 577px) and (max-width: 2000px) {
 
   .company {
     background-image: url("./images/tree.jpeg");
@@ -377,17 +386,17 @@ footer a:hover {
 
 @media (max-width: 576px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
 
   .hero h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   /* company section */
   .company-info {
     text-align: center !important;
-    padding: 2rem !important;
+    padding: 1.5rem !important;
   }
 
   .conmpany-text-last {
@@ -401,15 +410,15 @@ footer a:hover {
 
   .company-info p {
     line-height: 5rem;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   .company-info .more {
-    margin-top: 9rem;
+    margin-top: 8.5rem;
   }
 
   .contact h2 {
-    font-size: 4.6rem;
+    font-size: 4.5rem;
     text-align: center;
   }
 
@@ -418,41 +427,15 @@ footer a:hover {
     width: 70%;
     height: 25%;
   }
-
-  .container {
-    position: relative;
-    height: 300px;
-  }
-
-  .row {
-    clip-path: inset(0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('画像の場所');
+  .company {
+    background-image: url("./images/tree.jpeg");
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    position: relative;
   }
 
   .hero {
     background-image: url("./images/main.jpeg");
-    background-position: center;
-    background-size: cover;
-  }
-
-  .contact {
-    background-image: url("./images/butterfly.jpg");
     background-position: center;
     background-size: cover;
   }
