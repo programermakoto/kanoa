@@ -113,12 +113,7 @@ header .menu-bar li a:hover {
 }
 
 /* hero section */
-.hero {
-  background-image: url("./images/main.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
+
 
 .hero::after {
   position: absolute;
@@ -185,13 +180,7 @@ header .menu-bar li a:hover {
 }
 
 /* company section */
-.company {
-  background-image: url("./images/tree.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
-}
+
 
 .company::after {
   position: absolute;
@@ -292,12 +281,6 @@ header .menu-bar li a:hover {
 }
 
 /* contact section */
-.contact {
-  background-image: url("./images/butterfly.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
 
 .contact input {
   height: 4rem;
@@ -340,6 +323,24 @@ footer a {
 
 footer a:hover {
   color: rgb(71, 173, 187);
+}
+
+@media (min-width: 393px) and (max-width: 2000px) {
+
+  .company {
+    background-image: url("./images/tree.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .hero {
+    background-image: url("./images/main.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -448,14 +449,12 @@ footer a:hover {
     background-image: url("./images/main.jpeg");
     background-position: center;
     background-size: cover;
-    background-attachment: unset;
   }
 
   .contact {
     background-image: url("./images/butterfly.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: unset;
   }
 
   .box {
