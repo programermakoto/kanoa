@@ -181,9 +181,7 @@ header .menu-bar li a:hover {
 
 /* company section */
 
-.company{
-  height: 100vh;
-}
+
 .company::after {
   position: absolute;
   content: "";
@@ -347,7 +345,9 @@ footer a:hover {
     background-attachment: fixed;
     position: relative;
   }
-
+  .company{
+    height: 100vh;
+  }
   .hero {
     background-image: url("./images/main.jpeg");
     background-position: center;
@@ -458,7 +458,9 @@ footer a:hover {
   .box {
     width: 40% !important;
   }
-
+  .company{
+    height: auto;
+  }
   /* footer section */
   footer {
     padding-top: 15px;
