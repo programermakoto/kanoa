@@ -459,6 +459,8 @@ footer a:hover {
     width: 40% !important;
   }
   .company{
+    margin: 0;
+    padding: 0;
     display: block;
     height: 200vh!important;
   }
