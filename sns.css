@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+
+.sp-br {
+    display: none;
+}
+
+body {
+    font-family: "Zen Antique", serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2,
+h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 540;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+a,
+span {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header {
+    position: fixed !important;
+    z-index: 1000;
+    padding: 2.7rem 5.4rem;
+    text-shadow: black 1px 3px 6px;
+}
+
+.logo-title {
+    cursor: pointer;
+}
+
+header img {
+    width: 3.5rem;
+}
+
+/* ----- book-javascript ----- */
+header .book-close-btn {
+    display: block;
+}
+
+header .book-close-btn.active {
+    display: none;
+}
+
+header .book-open-btn {
+    display: none;
+}
+
+header .book-open-btn.active {
+    display: block;
+}
+
+/* ----- book-javascript ----- */
+
+header .menu-bar {
+    position: absolute;
+    top: 30vh;
+    right: -200px;
+    /* right: -20px; */
+    background: #000;
+    width: 170px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+}
+
+header .menu-bar.active {
+    right: -20px;
+    opacity: 1;
+}
+
+header .menu-bar li {
+    margin-bottom: 3rem;
+}
+
+header .menu-bar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .menu-bar li a:hover {
+    color: rgb(71, 173, 187);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 160px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    transition: 0.5s;
+    z-index: 4;
+}
+
+.show.active {
+    position: absolute;
+    right: 300px;
+}
+
+.show header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.show h1 {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.show video {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    background-color: #ffffff03;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: block;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.social li a:hover {
+    transform: translateY(-15px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#Technology {
+    width: 100%;
+    height: auto;
+    padding-top: 100vh;
+    text-align: center;
+    color: black;
+
+    h2 {
+        margin: 60px 0;
+    }
+
+    .Technology-box {
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .box {
+            width: calc((100% - 16px) / 3);
+
+            img {
+                width: 100%;
+                height: 250px;
+            }
+
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+#service {
+    width: 100%;
+    height: auto;
+    color: black;
+    padding: 30px;
+    text-align: center;
+
+    .service-sns {
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        width: 50%;
+        height: auto;
+        padding: 30px 0;
+        border: 5px solid orange;
+        margin: 40px auto;
+
+        img {
+            width: 80px;
+            padding: 10px;
+        }
+    }
+
+    p {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    h1 {
+
+        font-size: 25px;
+        color: white;
+        background-color: rgb(69, 62, 62);
+        padding: 30px 0 30px 20px;
+    }
+
+
+
+
+
+    .service-box {
+        display: flex;
+        padding: 30px 0;
+        width: 80%;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 25px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px 0;
+            border-left: 10px solid orange;
+        }
+
+        ul {
+            width: 30%;
+        }
+
+        li {
+            width: 100%;
+            height: 30px;
+            font-size: 15px;
+        }
+    }
+}
+
+#course {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(images/butterfly.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.552);
+    background-blend-mode: lighten;
+
+    .item {
+        text-align: center;
+        padding: 20px;
+        width: 30%;
+        border: 1px solid black;
+        height: 300px;
+
+        h2 {
+            color: rgb(69, 62, 62);
+        }
+
+        p {
+            line-height: 2;
+            margin: 40px 0;
+            color: rgb(69, 62, 62);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            padding: 10px 25px;
+            border: 1px solid black;
+            transition: all .5s;
+        }
+
+        a:hover {
+            background-color: black;
+            padding: 10px 25px;
+            color: white;
+            border: 1px solid white;
+        }
+    }
+
+    .item:nth-child(1) {
+        background-color: gold;
+    }
+
+    .item:nth-child(2) {
+        background-color: silver;
+    }
+
+    .item:nth-child(3) {
+        background-color: #ade0ff;
+        ;
+    }
+}
+
+
+
+
+
+
+#qa {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    color: black;
+
+    h1 {
+        font-size: 25px;
+        border-bottom: 1px solid;
+        padding: 8px 16px;
+        margin-bottom: 16px;
+    }
+
+    dl>div {
+        margin-bottom: 8px;
+    }
+
+    dt {
+        padding: 8px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        font-size: 15px;
+    }
+
+    dt::before {
+        content: 'Q. ';
+    }
+
+    dt::after {
+        content: '+';
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        transition: transform .3s;
+    }
+
+    dl>div.appear dt::after {
+        transform: rotate(45deg);
+    }
+
+    dd {
+        padding: 8px;
+        display: none;
+    }
+
+    dd::before {
+        content: 'A .';
+    }
+
+    dl>div.appear dd {
+        display: block;
+        animation: .3s fadeIn;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+footer {
+    padding-bottom: 50px;
+    padding: 40px;
+    background-color: var(--dark);
+    font-size: 2rem;
+}
+
+footer h2 {
+    height: 50%;
+    font-size: 3rem;
+}
+
+footer a {
+    color: var(--body);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(71, 173, 187);
+}
+
+
+
+@media (min-width: 577px) and (max-width: 2000px) {
+    /*  */
+}
+
+@media (max-width: 1000px) {
+    /*  */
+}
+
+@media (max-width: 768px) {
+    /*  */
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 40%;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero h3 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+
+    /* */
+    .sec01 {
+        height: 20%;
+    }
+
+    /* footer section */
+    footer {
+        padding-top: 15px;
+
+    }
+}

@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.172);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+
+.sp-br {
+    display: none;
+}
+
+body {
+    font-family: "Zen Antique", serif;
+    color: rgb(67, 65, 65);
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2,
+h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 540;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+a,
+span {
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header {
+    position: fixed !important;
+    z-index: 1000;
+    padding: 2.7rem 5.4rem;
+    text-shadow: black 1px 3px 6px;
+}
+
+.logo-title {
+    cursor: pointer;
+}
+
+header img {
+    width: 3.5rem;
+}
+
+/* ----- book-javascript ----- */
+header .book-close-btn {
+    display: block;
+}
+
+header .book-close-btn.active {
+    display: none;
+}
+
+header .book-open-btn {
+    display: none;
+}
+
+header .book-open-btn.active {
+    display: block;
+}
+
+/* ----- book-javascript ----- */
+
+header .menu-bar {
+    position: absolute;
+    top: 30vh;
+    right: -200px;
+    /* right: -20px; */
+    background: #000;
+    width: 170px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+}
+
+header .menu-bar.active {
+    right: -20px;
+    opacity: 1;
+}
+
+header .menu-bar li {
+    margin-bottom: 3rem;
+}
+
+header .menu-bar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .menu-bar li a:hover {
+    color: rgb(71, 173, 187);
+}
+
+
+
+
+
+
+
+
+
+
+/* 会社情報*/
+#info {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 70px;
+    display: flex;
+    color: black;
+}
+
+.company-info {
+    width: 100%;
+    padding: 10px;
+}
+
+.title {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.info-item {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+}
+
+.info-item h3 {
+    width: 30%;
+    font-size:20px;
+    text-align: center;
+    border-right: 3px solid black;
+}
+
+.info-item h6 {
+    width: 70%;
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.info-item p {
+    width: 70%;
+    text-align: left;
+    padding: 20px;
+}
+
+.info-item ol {
+    width: 70%;
+    text-align: left;
+    font-size:15px;
+    padding: 20px;
+    li{
+        padding:5px 10px;
+    }
+}
+.info-item iframe {
+    width: 70%;
+    height: 200px;
+}
+
+
+
+/* privacy */
+.privacy {
+    padding: 100px 0;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.privacy h1 {
+    width: 80%;
+    margin: 10px auto 0;
+    font-size: 5rem;
+    padding-top: 100px;
+}
+
+.privacy small {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.privacy-1 {
+    width: 30%;
+    list-style: none;
+    margin-left: auto;
+}
+
+.privacy p {
+    width: 80%;
+    margin: 0px auto 0;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.privacy p:nth-of-type(1) {
+    margin-top: 30px;
+}
+
+.privacy-2 {
+    padding-left: 15px;
+    width: 80%;
+    margin: 0px auto 0;
+}
+
+.privacy-2 li {
+    margin: 10px 0;
+    font-size:12px;
+    line-height: 2.5;
+}
+
+.privacy h3 {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.privacy table {
+    background-color: rgba(255, 255, 255, 0.728);
+    width: 100%;
+}
+
+.privacy table td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+footer {
+    padding-bottom: 50px;
+    padding: 40px;
+    background-color: var(--dark);
+    font-size: 2rem;
+}
+
+footer h2 {
+    height: 50%;
+    font-size: 3rem;
+}
+
+footer a {
+    color: var(--body);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(71, 173, 187);
+}
+
+
+
+@media (min-width: 577px) and (max-width: 2000px) {
+    /*  */
+}
+
+@media (max-width: 1000px) {
+    /*  */
+}
+
+@media (max-width: 768px) {
+    /*  */
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 40%;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero h3 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+
+    /* */
+    .sec01 {
+        height: 20%;
+    }
+
+    /* footer section */
+    footer {
+        padding-top: 15px;
+
+    }
+}
